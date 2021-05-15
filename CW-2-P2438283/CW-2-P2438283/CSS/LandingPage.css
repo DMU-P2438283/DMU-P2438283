@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+header {
+  background: url(https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?ixlib=rb-1.2.1&ixix=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.wrap{
+  background-color: rgb(0, 63, 114, 0.2);
+  height: 100vh;
+}
+
+.wrap h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-top: 30vh;
+  font-size: 8vh;
+  color: aliceblue;
+  letter-spacing: 2vh;
+  opacity: 0.8;
+}
+
+h1{
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 0.8;
+  }
+
+}
+
+.wrap button{
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 15px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-top: 90px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button{
+  animation: fadeInn 4s;
+}
+
+@keyframes fadeInn {
+
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+
+}
+
+button:hover{
+  color: crimson;
+  border: 2px solid crimson;
+  background-color: rgb(0, 0, 0, 0.4);
+}

@@ -289,10 +289,16 @@ footer{
   position: relative;
   height: 500px;
   overflow: hidden;
-  background: url('C:/Users/pejic/OneDrive/Desktop/Tech_3015 Multimedia 3/Image/second-photo.jpg') no-repeat center;
+  background: url(https://miro.medium.com/max/2625/0*IH62UbMhOAKKAqPC) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   z-index: -45;
+}
+
+@media  all and (max-width:480px) {
+  .hero-image  {
+    background-attachment: scroll;
+  }
 }
 
 .container2{

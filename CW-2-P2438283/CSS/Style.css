@@ -308,6 +308,12 @@ footer{
   font-family: sans-serif;
 }
 
+@media  all and (max-width:480px) {
+  .hero-image  {
+    background-attachment: scroll;
+  }
+}
+
 .container2 h1{
   font-size: 8vh;
   letter-spacing: 0.2em;
@@ -320,4 +326,9 @@ footer{
   .hero-image{
     height: 200px;
   }
+}
+
+.image1 {
+  width: 100px;
+  height: 100px;
 }

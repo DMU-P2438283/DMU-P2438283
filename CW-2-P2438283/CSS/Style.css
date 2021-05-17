@@ -194,7 +194,7 @@ footer{
 }
 
 .footer_info .footer_width{
-  padding: 0 15px;
+  padding: 0;
 }
 
 .footer_info h2{
@@ -308,6 +308,7 @@ footer{
   font-family: sans-serif;
 }
 
+
 @media  all and (max-width:480px) {
   .hero-image  {
     background-attachment: scroll;
@@ -315,20 +316,16 @@ footer{
 }
 
 .container2 h1{
-  font-size: 8vh;
+  font-size: 16vw;
   letter-spacing: 0.2em;
   opacity: 0.5;
   margin: 0;
 }
+
 
 @media screen and (max-width:767px){
 
   .hero-image{
     height: 200px;
   }
-}
-
-.image1 {
-  width: 100px;
-  height: 100px;
 }

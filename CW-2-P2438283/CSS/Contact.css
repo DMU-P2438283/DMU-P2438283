@@ -1,7 +1,9 @@
 *{
-  margin: 0px;
-  padding: 0px;
-  box sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -135,51 +137,88 @@ body{
 }
 
 
-.contact-form {
-  width: 85%;
-  max-width: 700px;
-  background: #f1f1f1;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.wrapper{
   position: relative;
-  left: 50%;
-  transform: translate(-50% -50%);
-  padding: 30px 40px;
-  box-sizing: border-box;
-  border-radius: 8px;
+  width: 100%;
+  left: 31%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 700px;
+  background: rgba(0,0,0,0.8) transparent;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width:600px){
+
+  .wrapper{
+    left: 0%;
+  }
+}
+
+.wrapper .title h1{
+  color: grey;
   text-align: center;
-  box-shadow: 0 0  20px #000000b3;
-  font-family: sans-serif;
-  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
-.contact-form h1 {
-  margin-top: 0;
-  font-weight: 200;
+.contact-form{
+  display: flex;
 }
 
-.txtbox{
-  border: 1px solid grey;
-  margin: 8px 0;
-  padding: 12px 18px;
-  border-radius: 8px;
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
 }
 
-.txtbox label {
-  display: block;
-  text-align: left;
-  color: #333;
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+
+#my-form-button {
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   text-transform: uppercase;
-  font-size: 14px;
 }
 
-.txtbox  input,.txtbox textarea{
-  width: 100%
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
-  margin-top: 6px;
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
 }
-
 
 
 a{
@@ -236,7 +275,7 @@ footer{
   display: inline-block;
   margin-right: 50px;
   width: 50px;
-  height: 40px;
+  height: 50px;
   padding-top: 12px;
   background-color: transparent;
   font-size: 25px;
@@ -330,7 +369,7 @@ footer{
 }
 
 .container2 h1{
-  font-size: 8vh;
+  font-size: 16vw;
   letter-spacing: 0.2em;
   opacity: 0.5;
   margin: 0;

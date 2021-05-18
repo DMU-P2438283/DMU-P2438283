@@ -1,3 +1,5 @@
+/*the star at the top is a universal selector, meaning it selects everthing on the page and applies the style rules accordingly*/
+
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +9,8 @@
 body{
   font-family: sans-serif;
 }
+
+/*background image with button*/
 
 header {
   background: url(https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?ixlib=rb-1.2.1&ixix=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q) no-repeat;

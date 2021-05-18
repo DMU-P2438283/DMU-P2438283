@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
 *{
   margin: 0;
   padding: 0;
@@ -140,83 +137,88 @@ body{
 }
 
 
-.wrapper{
-  position: relative;
+section {
+  height: 100vh;
   width: 100%;
-  left: 31%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 700px;
-  background: white;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-@media screen and (max-width:600px){
-
-  .wrapper{
-    left: 0%;
-  }
-}
-
-.wrapper .title h1{
-  color: grey;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.contact-form{
+  background-color: white;
   display: flex;
-}
-
-.input-fields{
-  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-right: 4%;
 }
-
-.input-fields,
-.msg{
-  width: 48%;
+.container-frm {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: aliceblue;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
-
-.input-fields .input,
-.msg textarea{
-  margin: 10px 0;
-  background: transparent;
-  border: 0px;
-  border-bottom: 2px solid #c5ecfd;
-  padding: 10px;
-  color: black;
+.form-group {
   width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
 }
 
-.msg textarea{
-  height: 212px;
+textarea {
+  resize: vertical;
 }
-
-
-#my-form-button {
-  background: #39b7dd;
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
   text-align: center;
-  padding: 15px;
-  border-radius: 5px;
-  color: #fff;
   cursor: pointer;
-  text-transform: uppercase;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
 }
-
-@media screen and (max-width: 600px){
-  .contact-form{
-    flex-direction: column;
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
   }
-  .msg textarea{
-    height: 80px;
+  90% {
+    opacity: 1;
+    pointer-events: all;
   }
-  .input-fields,
-  .msg{
-    width: 100%;
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -315,6 +317,8 @@ footer{
   background-color: rgb(66,66,66);
 }
 
+/*media queries used to change width properties on any device smaller than 992px*/
+
 @media screen and (max-width:992px){
 
   .about , .contact{
@@ -327,6 +331,8 @@ footer{
   }
 }
 
+/*media queries used to change width properties on any device smaller than 767px*/
+
 @media screen and (max-width:767px){
 
   .about , .contact , .link{
@@ -338,6 +344,7 @@ footer{
     flex-direction: column;
   }
 }
+
 
 .hero-image{
   position: relative;

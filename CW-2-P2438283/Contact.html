@@ -49,26 +49,38 @@
       <h1><span>Photographer | Videographer | Creator</span></h1>
     </div>
 
-    <form id="my-form" action="https://formspree.io/p2438283@my365.dmu.ac.uk." method="POST">
-      <div class="wrapper">
-      <div class="title">
-      <h1>contact me!</h1>
+    <!--for the form, it is linked to my formspree account and is connected to my uni email, if a message need to be sent to a different email,
+    the email has to change in the account-->
+
+      <section>
+  <div class="container-frm">
+    <form action="https://formspree.io/f/mknkjpbn" method="POST" id="my-form">
+
+      <div class="form-group">
+        <label for="firstName"> First Name</label>
+        <input type="text" id="firstName" name="firstName">
       </div>
-      <div class="contact-form">
-      <div class="input-fields">
-        <input type="text" class="input" name="Full Name" placeholder="Name">
-        <input type="text" class="input" name="Email Address" placeholder="Email Address">
-        <input type="text" class="input" name="Phone" placeholder="Phone">
-        <input type="text" class="input" name="Subject" placeholder="Subject">
+
+      <div class="form-group">
+        <label for="latsName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
       </div>
-      <div class="msg">
-        <textarea placeholder="Message"></textarea>
-        <button id="my-form-button">Submit</button>
-        <p id="my-form-status"></p>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
       </div>
-    </div>
-  </div>
+
+      <div class="form-group">
+        <label for="massage">Massage</label>
+        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
     </form>
+  </div>
+  <div id="status"></div>
+</section>
 
 
     <footer>
